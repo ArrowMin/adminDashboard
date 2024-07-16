@@ -1,0 +1,261 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  /* border: 1px solid yellow; */
+  height: 100%;
+
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.sidebar {
+  /* border: 1px solid red; */
+  grid-row: 1 / 3;
+  background-color: rgb(0, 140, 255);
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  padding: 20px 20px;
+}
+
+.dashboardLogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.dashboardLogo > div {
+  color: white;
+  font-size: 40px;
+  display: inline;
+}
+
+.dashboardLogo > svg {
+  fill: white;
+  width: 75px;
+  margin-right: 10px;
+}
+
+.homeBar > li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.homeBar svg {
+  fill: white;
+  width: 35px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.homeBar span {
+  color: white;
+  font-size: 25px;
+  display: inline;
+}
+
+.navBar {
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.upperHeader {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.searchBar,
+.leftLower {
+  /* margin: 25px 25px; */
+  display: flex;
+  align-items: center;
+}
+
+.searchBar > svg,
+.upperIcons > svg {
+  width: 40px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.searchBar > div {
+  width: 600px;
+  height: 50px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 50px;
+}
+
+.upperIcons {
+  display: flex;
+  align-items: center;
+}
+
+.upperIcons > div {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+.profilePicture {
+  object-fit: cover;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+#mainProfilePic {
+  width: 75px;
+  height: 75px;
+  margin-right: 25px;
+  margin-left: 15px;
+}
+
+.lowerHeader {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.upperText {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.lowerText {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.rightLower {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerButton {
+  background-color: rgb(0, 140, 255);
+  color: white;
+  width: 150px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContent {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgb(241, 241, 241);
+}
+
+.projectsHolder {
+  grid-row: 1/3;
+  /* border: 1px solid red; */
+  font-size: 30px;
+  padding: 15px;
+}
+
+.yourProjects {
+  font-weight: bold;
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.project {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border-left: 20px solid rgb(255, 153, 0);
+}
+
+.upperProjectText {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.lowerProjectText {
+  font-size: 20px;
+}
+
+.lowerProject {
+  display: flex;
+  justify-content: end;
+}
+
+.lowerProject > svg {
+  width: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.announcementHolder {
+  /* border: 1px solid red; */
+  padding: 15px 15px;
+}
+
+.trendingHolder {
+  /* border: 1px solid red; */
+  padding: 15px 15px;
+}
+
+.boldText {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.announcementContainer {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.announcement {
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+}
+
+.announcement:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+.upperAnnouncement {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.lowerAnnouncement {
+  font-size: 15px;
+}
